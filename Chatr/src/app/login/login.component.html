@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!--  <script defer type="text/javascript" src="./scripts/login.js"></script>-->
+</head>
+<body>
 
+    <div id="cont">
+        <div class="alCenter">
+        <h1>LOGIN</h1>
+        <!-- onsubmit="return loginValidForm()" action="login" method="post"  -->
+        <form name="loginForm" method ="post" action="login" onsubmit="return false"  id="loginForm" >
+            <h3>Username : </h3>
+            <input type="text" id="userNameInp"  name="userName" class="inputBox" placeholder="UserName">
+            <span style="color:#380400; font-weight: bold; margin: 10px 0 10px 0;" id="userMes"></span>
+            <h3>Password : </h3>
+            <input type="password" id="passwordInp" name="password" class="inputBox" placeholder="Password">
+            <span style="color:#380400; font-weight: bold; margin:10px 0 10px 0; " id="passMes"></span>
+            <br>
+            <a href="./pages/fgPass.html">Forgot Pass</a>
+            <br/> 
+            <input  value="Login" type="submit" id="frSub" />
+		</form>
+
+        <button id="nrgBtn"><span><a class="rLink" href="./pages/regUser.html"> New User </a> </span> </button>
+		<button data-toggle="modal" data-target="#adminAccModal" id="adUser">Admin Login</button>
+        </div>
+
+</body>
+</html>

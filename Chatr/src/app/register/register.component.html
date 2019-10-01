@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register New User</title>
+    <link rel="stylesheet" href="../css/regPg.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    <script defer src="../scripts/regPage.js"></script>
+</head>
+<body>
+        <div id="cont">
+            <div class="alCenter">
+                    <h1>REGISTER USER</h1> <!-- ../regUser -->
+                    <form name="regForm" id="regFormid" onsubmit ="return false" method="POST" action="../regUser" >
+                        <h2>Please Enter Your User Information : </h2>
+                        <h4>First Name : </h4>
+                        <input id="fn" class="rgInp" type="text" name="firstName" placeholder="First name">
+                        <h4>Last Name : </h4>
+                        <input id="ln" class="rgInp" type="text" name="lastName" placeholder="Last name">
+                        <h4>User Email : </h4>
+                        <input id="uemail" class="rgInp" type="email" name="usrEmail" placeholder="Email">
+                        <h4>Password : </h4>
+                        <input  class="rgInp" id="password" type="password" name="password" placeholder="Password">
+                        <h4>Password Check : </h4>
+                        <input class="rgInp" type="password" name="password2" placeholder="Re-enter Password">
+                        <h4></h4>
+                        <hr>
+                        
+                        <h2>Please Enter A Security Questions : </h2>
+                        <select id="seqQus" class="rgInp" id="opsSel" name="regIng">
+                                <option value="What is your Middle Name">What is your Middle Name ?</option>
+                                <option value="What is your First Car Model Name">What is your First Car Model Name ?</option>
+                                <option value="What is your Pet Name">What is your Pet Name ?</option>
+                                <option value="What city were you Born">What city were you Born ?</option>
+                        </select>
+                        <h4>Answer : </h4>
+                        <input id="seqAns" class="rgInp" type="text" name="seqAns" placeholder="Question Answer">
+                        <br>
+                        <input id="regfrSub" type="button" value="Register" >
+                    </form>
+                    <button id="goBk"><a class="reggb" href="../index.html">Go Back To login</a></button>
+            </div>
+        </div>
+</body>
+</html>
