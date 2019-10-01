@@ -4,6 +4,6 @@ export class RegisterInfo {
     userEmail : String;
     userPass : String;
     userDisName : String;
-    userNum : numeber;
+    userNum : number;
 
 }
