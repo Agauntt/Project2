@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ChatWindowComponent } from './chat-window/chat-window.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    ChatWindowComponent,
     SearchComponent,
     LoginComponent,
     RegisterComponent
-
   ],
   imports: [
     BrowserModule,
