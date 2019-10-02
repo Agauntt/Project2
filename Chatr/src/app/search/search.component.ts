@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageSpan } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  username:string;
+  messages:Messages[];
 
-  ngOnInit() {
+  constructor(private chatrService: ChatrService) { 
+    
+  }
+
+  messagesByUsername() {
+    this.chatrService.findByUsername(this.username).subscribe(data=> {
+      console.log(data)
+      this.messages = data;
+    })
   }
 
 }
