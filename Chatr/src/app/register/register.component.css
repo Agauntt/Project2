@@ -9,7 +9,8 @@
     margin-top: 5%;
 } */
 #cont {
-    max-width: 65%;
+    margin-top : 15%;
+    max-width: 100%;
     padding: 0 10px 10px 10px;
     background-color:  #FC9950;  
     border: 3px solid orange;

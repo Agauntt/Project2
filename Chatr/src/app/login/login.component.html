@@ -1,10 +1,17 @@
-<div>
-
-    <div id="cont">
+<div class="container">
+    <div class="row justify-content-md-center">
+       
+    <div class="col-md-auto"> 
+        
+        <div id="cont">
+      
         <div class="alCenter">
         <h1>CHATR LOGIN : </h1>
         <!-- onsubmit="return loginValidForm()" action="login" method="post"  -->
         <form name="loginForm" method ="post" action="login" onsubmit="return false"  id="loginForm" >
+                <mat-form-field>
+                        <input matInput placeholder="Enter your email" [formControl]="email" required>
+                </mat-form-field>
             <h3>Email : </h3>
             <input type="email" id="userNameInp"  name="userName" class="inputBox" placeholder="UserName">
             <!-- <span style="color:#380400; font-weight: bold; margin: 10px 0 10px 0;" id="userMes"></span> -->
@@ -17,8 +24,12 @@
             <input  value="Login" type="submit" id="frSub" />
 		</form>
 
-        <button id="nrgBtn"><span><a class="rLink" href="./pages/regUser.html"> New User </a> </span> </button>
-		<button data-toggle="modal" data-target="#adminAccModal" id="adUser">Admin Login</button>
+        <button id="nrgBtn"><span><a class="rLink" routerLink="/register"> New User </a> </span> </button>
+		
         </div>
-
+      
     </div>
+    
+     
+    </div>
+</div>
