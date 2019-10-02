@@ -9,18 +9,18 @@
         <h1>CHATR LOGIN : </h1>
         <!-- onsubmit="return loginValidForm()" action="login" method="post"  -->
         <form name="loginForm" method ="post" action="login" onsubmit="return false"  id="loginForm" >
-                <mat-form-field>
-                        <input matInput placeholder="Enter your email" [formControl]="email" required>
+            
+            <mat-form-field class="matInp">
+                <input  matInput type="text" placeholder="UserName" [formControl]="email" required>
+            </mat-form-field>
+            
+            <mat-form-field class="matInp">
+                    <input  matInput type="password" placeholder="Password" [formControl]="password" required>
                 </mat-form-field>
-            <h3>Email : </h3>
-            <input type="email" id="userNameInp"  name="userName" class="inputBox" placeholder="UserName">
-            <!-- <span style="color:#380400; font-weight: bold; margin: 10px 0 10px 0;" id="userMes"></span> -->
-            <h3>Password : </h3>
-            <input type="password" id="passwordInp" name="password" class="inputBox" placeholder="Password">
-            <!-- <span style="color:#380400; font-weight: bold; margin:10px 0 10px 0; " id="passMes"></span> -->
-            <br>
+            
+            <!-- <br>
             <a href="./pages/fgPass.html">Forgot Pass</a>
-            <br/> 
+            <br/>  -->
             <input  value="Login" type="submit" id="frSub" />
 		</form>
 

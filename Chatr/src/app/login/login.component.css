@@ -4,8 +4,8 @@
     margin-top: 25%;
     max-width: 100%;
     padding: 0 10px 10px 10px;
-    background-color:  #FC9950;  
-    border: 3px solid orange;
+    background-color:  #DADDE2;  
+    border: 3px solid #0F2862;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,7 +13,7 @@
    width : 400px;
 }
 
-.inputBox{
+/* .inputBox{
 width : 98%;
 padding-left: 4px;
 height: 35px;
@@ -21,6 +21,16 @@ font-size: 20px;
 border: 2px solid none;
 
 
+} */
+
+.matInp{
+    width:100%;
+    color :black;
+    font-size:30px;
+}
+
+.mat-input-underline {
+    background-color: black;   
 }
 
 h3 {
@@ -35,17 +45,18 @@ h3 {
     margin-top : 20px;
     width : 100%;
     padding : 10px;
-    background-color: #2F81FA ;
-    border : none;
+    background-color: #DADDE2;
+    border : 3px solid #2F81FA;
 }
 
 #nrgBtn {
+    color :black;
     font-size: 20px;
     margin-top: 20px;
     width :100%;
     padding:10px;
-    background-color: #2D1606  ;
-    border : none;
+    background-color: #DADDE2;
+    border :3px solid #2D1606;
 
 }
 .rLink {
