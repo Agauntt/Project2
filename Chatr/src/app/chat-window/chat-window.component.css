@@ -1,0 +1,17 @@
+.post-box {
+    margin-right: 15px;
+    float: right;
+    margin-top: 15px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 80vh;
+    width: 85vw;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    margin-left: 13vw;
+    width: 70vw;
+    border-radius: 5px;
+}

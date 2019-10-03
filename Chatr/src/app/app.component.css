@@ -1,0 +1,30 @@
+.nav {
+    background-color: #0F2862;
+    height: 50px;
+    margin: 0px;
+    color: white;
+    /* border-radius: 5px; */
+}
+
+.channels-bar {
+    margin-left: 15px;
+    float: left;
+    margin-top: 15px;
+    padding-top: 0px;
+    background-color: #0F2862;
+    width: 7em;
+    height: 80vh;
+    color: white;
+    border-radius: 5px;
+}
+
+.p-info {
+    border-bottom: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-page {
+    display: inline;
+}
