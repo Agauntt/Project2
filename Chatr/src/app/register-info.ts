@@ -3,7 +3,8 @@ export class RegisterInfo {
     lastName : String;
     userEmail : String;
     userPass : String;
-    userDisName : String;
-    userNum : number;
+    userName : String;
+    seqQues : String;
+    seqAns : String;
 
 }
