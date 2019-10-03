@@ -11,6 +11,7 @@ export class RegisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("On init Register Pages")
   }
 
 }
