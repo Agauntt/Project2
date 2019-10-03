@@ -47,6 +47,11 @@ h3 {
     padding : 10px;
     background-color: #DADDE2;
     border : 3px solid #2F81FA;
+    transition : background-color .5s;
+}
+
+#frSub:hover {
+    background-color: #2F81FA;
 }
 
 #nrgBtn {
