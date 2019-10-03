@@ -1,3 +1,4 @@
+<div *ngIf="authorized else elseBlock" >
 <div class="post-box">
     Chat bubbles go here
 </div>
@@ -23,3 +24,12 @@
     <button class="btn btn-secondary" type="button" id="button-addon2">Button</button>
     </div>
 </div>
+</div>
+
+
+<ng-template #elseBlock>
+    <h2>Page is Unauthorized Plase Try Again Later</h2>
+
+</ng-template>
+
+
