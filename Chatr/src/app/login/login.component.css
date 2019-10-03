@@ -57,7 +57,13 @@ h3 {
     padding:10px;
     background-color: #DADDE2;
     border :3px solid #2D1606;
+    transition : background-color .5s;
+    transition : color .5s;
 
+}
+#nrgBtn:hover {
+    color : white;
+    background-color : #2D1606;
 }
 .rLink {
     text-decoration: none;
