@@ -1,17 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { User } from '../user';
+import { ChatrService } from '../chatr.service';
+// import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
+  user:User;
 
-  ngOnInit() {
-    console.log("On Init Login")
-  }
+  constructor(private chatrService:ChatrService) {
+    this.user = new User;
+   }
 
+   login(){
+    this.chatrService.login(this.user).subscribe(data => {
+      console.log(data);
+    })
+   }
 }
