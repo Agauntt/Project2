@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {MatInputModule} from '@angular/material/input';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
+const routes: Routes=[
+  {path: 'search', component: SearchComponent},
+]
 
 
 @NgModule({
@@ -23,11 +26,9 @@ import { ChatWindowComponent } from './chat-window/chat-window.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule,
-    MatFormFieldModule,
-    MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
