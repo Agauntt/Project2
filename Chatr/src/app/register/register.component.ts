@@ -15,5 +15,10 @@ export class RegisterComponent{
     this.user = new User;
    }
 
-   
+   registerUser(){
+     console.log("registering user --" + this.user.passWord);
+     this.chatrService.registerUser(this.user).subscribe(data => {
+       console.log(data);
+     })
+   }
 }

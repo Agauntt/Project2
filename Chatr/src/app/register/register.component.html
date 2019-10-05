@@ -5,20 +5,19 @@
         <div id="cont">
             <div class="alCenter">
                     <h1>REGISTER USER</h1> <!-- ../regUser -->
-                    <form name="regForm" id="regFormid" onsubmit ="return false" method="POST" action="../regUser" >
+                    <form name="regForm" id="regFormid" (ngSubmit)="registerUser()">
 
                         <div class="container">
+                            <h3>Please Enter Your User Information : </h3>
                             <div class="row">
-                                <div class="col-sm-auto">
-                                        <h3>Please Enter Your User Information : </h3>
-                                        <input type="text" name="chatruser" placeholder="Username" [(ngModel)] = user.chatruser><br>
-                                        <input type="password" name="password" placeholder="Password" [(ngModel)] = user.passWord><br>
-                                </div>
+                                        <input class="form-control col-md-6" type="text" name="chatruser" placeholder="Username" [(ngModel)] = user.chatruser>
+                                        <input class="form-control col-md-6" type="password" name="password" placeholder="Password" [(ngModel)] = user.passWord>
                             </div>
-                        </div>    
+                        </div> 
+                        <input id="regfrSub" type="submit" value="Register" >   
                 </form>
-                <input id="regfrSub" type="button" value="Register" >
-                    <button id="goBk" ><a class="reggb"  routerLink="/">Go Back To login</a></button>
+                
+                <a class="reggb"  routerLink="/"><button id="goBk" >Go Back To login</button></a>
             </div>
         </div>
         </div>

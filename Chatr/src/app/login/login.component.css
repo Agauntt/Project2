@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+h1 {
+    margin-top: 10px;
+}
+
 #cont {
+    text-align: center;
+    border-radius: 5px;
     margin-top: 25%;
     max-width: 100%;
     padding: 0 10px 10px 10px;
@@ -10,6 +16,7 @@
 }
 
 .alCenter {
+    /* background: #0F2862; */
    width : 400px;
 }
 
@@ -46,12 +53,14 @@ h3 {
     width : 100%;
     padding : 10px;
     background-color: #DADDE2;
-    border : 3px solid #2F81FA;
+    border : 3px solid #4f5f76;
+    border-radius: 5px;
     transition : background-color .5s;
 }
 
 #frSub:hover {
-    background-color: #2F81FA;
+    background-color: #4f5f76;
+    color: white;
 }
 
 #nrgBtn {
@@ -61,14 +70,15 @@ h3 {
     width :100%;
     padding:10px;
     background-color: #DADDE2;
-    border :3px solid #2D1606;
+    border :3px solid #4f5f76;
+    border-radius: 5px;
     transition : background-color .5s;
     transition : color .5s;
 
 }
 #nrgBtn:hover {
     color : white;
-    background-color : #2D1606;
+    background-color : #4f5f76;
 }
 .rLink {
     text-decoration: none;
@@ -83,5 +93,13 @@ h3 {
     background-color: #2F81FA  ;
     border : none;
 }
+ .login-fields {
+     text-align: center;
+     display: inline-flex;
+     
+ }
 
+ .login-fields .form-control {
+     margin: 17px;
+ }
 
