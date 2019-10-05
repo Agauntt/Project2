@@ -34,4 +34,10 @@ public class ChatrServiceImpl implements ChatrService{
 		return userRepo.UsernameIn(user.getChatruser());
 	}
 
+	@Override
+	public List<Message> getMessagesByUsername(String chatruser) {
+		// TODO Auto-generated method stub
+		return userRepo.findByChatruserContaining(chatruser);
+	}
+
 }

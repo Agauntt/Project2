@@ -12,5 +12,6 @@ public interface ChatrService {
 	public ChatrUser registerUser(ChatrUser user);
 	public Message createMsg(Message msg);
 	public List<ChatrUser> login(ChatrUser user);
+	public List<Message> getMessagesByUsername(String chatruser);
 	
 }

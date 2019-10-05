@@ -8,10 +8,13 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.chatr.models.ChatrUser;
+import com.chatr.models.Message;
 
 @Repository
 public interface UserRepository extends JpaRepository<ChatrUser, Integer>{
 	
 //	@Query("Select c FROM chatr_user WHERE username = ?1")
     List<ChatrUser>UsernameIn(String username);
+    
+    public List<Message> findByChatruserContaining(String chatruser);
 }
