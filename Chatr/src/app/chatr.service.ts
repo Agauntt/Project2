@@ -11,11 +11,13 @@ import { User } from './user';
 export class ChatrService {
 
   private getByUsernameUrl: string;
-  private loginUrl: string
+  private loginUrl: string;
+  private registerUrl: string;
 
   constructor(private http:HttpClient) { 
-    this.getByUsernameUrl = "http://localhost:5050/search"
+    this.getByUsernameUrl = "http://localhost:5050/search/"
     this.loginUrl = "http://localhost:5050/login"
+    this.registerUrl = "http://localhost:5050/add"
   }
 
   public findByUsername(username: string){
@@ -25,5 +27,9 @@ export class ChatrService {
   public login(user: User){
     return this.http.post<User>(this.loginUrl, user);
   }
-}
 
+  public registerUser(user: User){
+    return this.http.post<User>(this.registerUrl, user);
+  }
+  
+}

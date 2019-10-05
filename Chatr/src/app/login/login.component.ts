@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
 import { ChatrService } from '../chatr.service';
+import { Router } from '@angular/router';
 // import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
@@ -12,7 +13,7 @@ export class LoginComponent {
 
   user:User;
 
-  constructor(private chatrService:ChatrService) {
+  constructor(private chatrService:ChatrService, private router:Router) {
     this.user = new User;
    }
 
@@ -21,10 +22,11 @@ export class LoginComponent {
       if(data == null){
         alert("no user found");
       } else{
-      console.log(data)
-      console.log(data.chatruser);
-      console.log(data.cid);
+      this.goToChat()
       }
     })
    }
+   goToChat(){
+    this.router.navigate(['/home'])
+  }
 }

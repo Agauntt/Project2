@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+h1 {
+    margin-top: 10px;
+}
+
 #cont {
-    margin-top : 10%;
+    text-align: center;
+    border-radius: 5px;
+    margin-top : 25%;
     max-width: 100%;
     padding: 0 10px 10px 10px;
     background-color:  #DADDE2;  
     border: 3px solid #0F2862;
+    border-radius: 5px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,14 +31,14 @@ border: 2px solid none;
     padding : 10px;
     /*background-color: #2F81FA ;*/
     background-color: #DADDE2;
-    border : 3px solid #2F81FA;
+    border : 3px solid #4f5f76;
     transition : background-color .5s;
     transition : color .5s;
-
 }
+
 #regfrSub:hover {
-    color : black;
-    background-color : #2F81FA;
+    color : white;
+    background-color : #4f5f76;
 }
 
 #goBk {
@@ -41,7 +48,8 @@ border: 2px solid none;
     width :100%;
     padding:10px;
     background-color: #DADDE2;
-    border : 3px solid #2D1606;
+    border : 3px solid #4f5f76;
+    border-radius: 5px;
     transition : background-color .5s;
     transition : color .5s;
     /* background-color:   ; */
@@ -49,7 +57,7 @@ border: 2px solid none;
 } 
 #goBk:hover {
     color : white;
-    background-color : #2D1606;
+    background-color : #4f5f76;
 }
 
 .reggb {

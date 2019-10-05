@@ -7,7 +7,7 @@ import { ChatWindowComponent as HomePage } from './chat-window/chat-window.compo
 const routes: Routes = [
   {path:"", component: LoginUser},
   {path:"register", component : RegUser},
-  {path:"homePage", component : HomePage}
+  {path:"home", component : HomePage}
 ];
 
 @NgModule({
