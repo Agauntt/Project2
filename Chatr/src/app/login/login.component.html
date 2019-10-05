@@ -8,20 +8,11 @@
         <div class="alCenter">
         <h1>CHATR LOGIN : </h1>
         <!-- onsubmit="return loginValidForm()" action="login" method="post"  -->
-        <form name="loginForm" method ="post" action="login" onsubmit="return false"  id="loginForm" >
-            
-            <mat-form-field class="matInp">
-                <input  matInput type="text" placeholder="UserName" [formControl]="email" required>
-            </mat-form-field>
-            
-            <mat-form-field class="matInp">
-                    <input  matInput type="password" placeholder="Password" [formControl]="password" required>
-                </mat-form-field>
-            
-            <!-- <br>
-            <a href="./pages/fgPass.html">Forgot Pass</a>
-            <br/>  -->
-            <input  value="Login" type="submit" id="frSub" />
+        <form name="loginForm" (ngSubmit)="login()" method ="post" action="login" onsubmit="return false"  id="loginForm" >
+                <input type="text" placeholder="Username" name="username" [(ngModel)] = "user.chatruser" required>
+                <input type="password" placeholder="Password" name="password" [(ngModel)] = "user.passWord" required>
+           <br>
+            <input  value="Login" type="submit" id="frSub"  />
 		</form>
 
         <button id="nrgBtn"><span><a class="rLink" routerLink="/register"> New User </a> </span> </button>
