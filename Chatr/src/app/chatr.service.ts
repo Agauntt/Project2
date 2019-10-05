@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from './user';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -20,8 +21,9 @@ export class ChatrService {
   public findByUsername(username: string){
     return this.http.get<Messages[]>(this.getByUsernameUrl+username);
   }
-
+  
   public login(user: User){
     return this.http.post<User>(this.loginUrl, user);
   }
 }
+

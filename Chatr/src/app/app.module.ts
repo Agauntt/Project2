@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { Routes, RouterModule } from '@angular/router';
 
+
 const routes: Routes=[
   {path: 'search', component: SearchComponent},
 ]
@@ -35,6 +36,7 @@ const routes: Routes=[
     // MatInputModule,
     FormsModule,
     // ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
