@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-// import {MatFormFieldModule} from '@angular/material/form-field';
+import { Component } from '@angular/core';
+import { User } from '../user';
+import { ChatrService } from '../chatr.service';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent{
 
-  constructor() { }
+  user:User;
 
-  ngOnInit() {
-    console.log("On init Register Pages")
-  }
+  constructor(private chatrService:ChatrService) {
+    this.user = new User;
+   }
 
+   
 }

@@ -9,15 +9,8 @@
         <h1>CHATR LOGIN : </h1>
         <!-- onsubmit="return loginValidForm()" action="login" method="post"  -->
         <form name="loginForm" (ngSubmit)="login()" method ="post" action="login" onsubmit="return false"  id="loginForm" >
-            
-            
-                <input type="text" placeholder="UserName" name="username" [(ngModel)] = "user.userName" required>
-           
-            
-           
+                <input type="text" placeholder="Username" name="username" [(ngModel)] = "user.chatruser" required>
                 <input type="password" placeholder="Password" name="password" [(ngModel)] = "user.passWord" required>
-         
-            
            <br>
             <input  value="Login" type="submit" id="frSub"  />
 		</form>

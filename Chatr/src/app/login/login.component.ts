@@ -18,7 +18,13 @@ export class LoginComponent {
 
    login(){
     this.chatrService.login(this.user).subscribe(data => {
-      console.log(data);
+      if(data == null){
+        alert("no user found");
+      } else{
+      console.log(data)
+      console.log(data.chatruser);
+      console.log(data.cid);
+      }
     })
    }
 }

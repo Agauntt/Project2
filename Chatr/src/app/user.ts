@@ -1,4 +1,5 @@
 export class User {
-    userName: string;
+    cid: number;
+    chatruser: string;
     passWord: string;
 }

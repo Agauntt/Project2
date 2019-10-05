@@ -22,7 +22,6 @@ export class ChatrService {
   }
 
   public login(user: User){
-    console.log(user);
     return this.http.post<User>(this.loginUrl, user);
   }
 }
