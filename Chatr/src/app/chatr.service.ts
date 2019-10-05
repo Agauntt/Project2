@@ -15,7 +15,7 @@ export class ChatrService {
   private registerUrl: string;
 
   constructor(private http:HttpClient) { 
-    this.getByUsernameUrl = "http://localhost:5050/search"
+    this.getByUsernameUrl = "http://localhost:5050/search/"
     this.loginUrl = "http://localhost:5050/login"
     this.registerUrl = "http://localhost:5050/add"
   }
