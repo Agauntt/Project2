@@ -37,6 +37,7 @@ public class WebSocketController {
     @SendTo("/topic/public")
     public Message addUser(@Payload Message chatMessage, SimpMessageHeaderAccessor headerAccessor) {
         // Add username in web socket session
+    	System.out.println("Inside add user function");
     	System.out.println(chatMessage);
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
         return chatMessage;

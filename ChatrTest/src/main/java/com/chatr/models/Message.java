@@ -75,7 +75,7 @@ public class Message {
 
 	@Override
 	public String toString() {
-		return "Message [mid=" + mid + ", message=" + message + ", sender=" + sender + "]";
+		return "Message [mid=" + mid + ", message=" + message + ", sender=" + sender + ", type=" + type + "]";
 	}
 	
 }

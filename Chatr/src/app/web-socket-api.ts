@@ -9,11 +9,11 @@ export class WebSocketAPI {
     WebSocketEndPoint: string = 'http://localhost:5050/ws'; // might need to remove http b
     topic: string = "/topic/public";
     stompClient: any;
-    chatWindowComponent: ChatWindowComponent;
+    // chatWindowComponent: ChatWindowComponent;
 
-    constructor(chatWindowComponent: ChatWindowComponent) {
-        this.chatWindowComponent = chatWindowComponent;
-    }
+    constructor(private chatWindowComponent: ChatWindowComponent) { }
+
+
     connect(){
         console.log("Initialize WebSocket Connection");
         // pass in username
@@ -46,17 +46,24 @@ export class WebSocketAPI {
 }
 
 onConnected(_this){
+    
     delay(1000).then(()=> {
-        console.log("post connection");
+        this.stompClient.subscribe(this.topic, (message)=>{
+            console.log("Message Recieved from Server :: " + message);
+            this.chatWindowComponent.handleMessage(JSON.parse(message.body))
+        });
+        console.log("about to send..")
         _this.stompClient.send("/app/chat.addUser",
             {},
             JSON.stringify({sender: this.username, type: 'JOIN'})
         )
+        
     }) 
 }
 
 onMessageReceived(message) {
     console.log("Message Recieved from Server :: " + message);
-    this.chatWindowComponent.handleMessage(JSON.parse(message.body));
+    console.log(this);
+    // this.chatWindowComponent.handleMessage(JSON.stringify(message.body))
 }
 }

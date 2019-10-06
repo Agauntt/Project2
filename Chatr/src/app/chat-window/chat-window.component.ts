@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { WebSocketAPI } from '../web-socket-api';
+import { User } from '../user';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
 
 @Component({
@@ -9,10 +11,10 @@ import { WebSocketAPI } from '../web-socket-api';
 })
 export class ChatWindowComponent {
   
-  user:string;
+  user:User;
   webSocketAPI: WebSocketAPI;
   greeting: any;
-  message: string;
+  message: Message;
   name: string;
 
   ngOnInit() {
@@ -30,6 +32,12 @@ export class ChatWindowComponent {
   }
   handleMessage(message){
     this.message = message;
+    if(message.type === "JOIN"){
+      console.log(message.sender + " joined!")
+    }
+    console.log(message)
   }
-
+  testFunc(){
+    console.log("This is a test")
+  }
 }
