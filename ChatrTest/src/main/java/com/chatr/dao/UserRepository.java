@@ -13,5 +13,5 @@ import com.chatr.models.ChatrUser;
 public interface UserRepository extends JpaRepository<ChatrUser, Integer>{
 	
 //	@Query("Select c FROM chatr_user WHERE username = ?1")
-    List<ChatrUser>UsernameIn(String username);
+    ChatrUser findByChatruser(String username);
 }
