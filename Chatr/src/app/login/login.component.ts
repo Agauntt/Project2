@@ -22,6 +22,7 @@ export class LoginComponent {
       if(data == null){
         alert("no user found");
       } else{
+        localStorage.setItem('username', this.user.chatruser);
       this.goToChat()
       }
     })

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { WebSocketAPI } from '../web-socket-api';
+
 
 @Component({
   selector: 'app-chat-window',
@@ -7,7 +9,27 @@ import { Component } from '@angular/core';
 })
 export class ChatWindowComponent {
   
-  constructor() { }
+  user:string;
+  webSocketAPI: WebSocketAPI;
+  greeting: any;
+  message: string;
+  name: string;
 
+  ngOnInit() {
+    this.webSocketAPI = new WebSocketAPI(new ChatWindowComponent());
+    this.connect();
+  }
+  connect(){
+    this.webSocketAPI.connect();
+  }
+  disconnect(){
+    this.webSocketAPI.disconnect();
+  }
+  sendMessage(){
+    this.webSocketAPI.send(this.name);
+  }
+  handleMessage(message){
+    this.message = message;
+  }
 
 }
