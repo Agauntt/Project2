@@ -1,0 +1,62 @@
+.post-box {
+    margin-right: 15px;
+    float: right;
+    margin-top: 15px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 80vh;
+    width: 85vw;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    margin-left: 14vw;
+    width: 70vw;
+    border-radius: 5px;
+}
+
+:host::ng-deep .event-message {
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+:host::ng-deep .chat-message {
+    color: white;
+    background-color: gray;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+:host::ng-deep .chat-message span{
+    color: white;
+    font-weight: bold;
+}
+
+.channels-bar {
+    margin-left: 15px;
+    float: left;
+    margin-top: 15px;
+    padding-top: 0px;
+    background-color: #0F2862;
+    width: 7em;
+    height: 80vh;
+    color: white;
+    border-radius: 5px;
+}
+
+.p-info {
+    border-bottom: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+.main-page {
+    display: inline;
+}
+
+.logoutBtn {
+    float: left;
+}

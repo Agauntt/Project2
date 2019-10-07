@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+       
+    <div class="col-md-auto"> 
+        
+        <div id="cont">
+      
+        <div class="alCenter">
+        <h1>CHATR LOGIN : </h1>
+        <!-- onsubmit="return loginValidForm()" action="login" method="post"  -->
+        <form name="loginForm" (ngSubmit)="login()" method ="post" action="login" onsubmit="return false"  id="loginForm" >
+            <div class="row login-fields">
+                <input class="form-control col-md-5" type="text" placeholder="Username" name="username" [(ngModel)] = "user.chatruser" required>
+                <input class="form-control col-md-5" type="password" placeholder="Password" name="password" [(ngModel)] = "user.passWord" required>
+            </div>
+            <input  value="Login" type="submit" id="frSub"  />
+		</form>
+
+        <span><a class="rLink" routerLink="/register"><button id="nrgBtn"> New User</button> </a> </span> 
+		
+        </div>
+      
+    </div>
+    
+     
+    </div>
+</div>

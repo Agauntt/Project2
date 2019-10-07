@@ -1,0 +1,31 @@
+<div class="container">
+        <div class="row justify-content-md-center">
+           
+        <div class="col-md-auto"> 
+        <div id="cont">
+            <div class="alCenter">
+                    <h1>REGISTER USER</h1> <!-- ../regUser -->
+                    <form name="regForm" id="regFormid" (ngSubmit)="registerUser()">
+
+                        <div class="container">
+                            <h3>Please Enter Your User Information : </h3>
+                            <div class="row">
+                                        <input class="form-control col-md-6" type="text" name="chatruser" placeholder="Username" required maxlength="8" [(ngModel)] = user.chatruser>
+                                        <input class="form-control col-md-6" type="password" name="password" placeholder="Password" required maxlength="8" [(ngModel)] = user.passWord>
+                            </div>
+                            <div *ngIf="name.errors.maxlength">
+                                    Name must be at max 8 characters long.
+                                </div>
+                            <div *ngIf="password.errors.maxlength">
+                                    Password must be at max 8 characters long.
+                                </div>
+                        </div> 
+                        <input id="regfrSub" type="submit" value="Register" >   
+                </form>
+                
+                <a class="reggb"  routerLink="/"><button id="goBk" >Go Back To login</button></a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>

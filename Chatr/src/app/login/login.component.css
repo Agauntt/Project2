@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+h1 {
+    margin-top: 10px;
+}
+
+#cont {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 25%;
+    max-width: 100%;
+    padding: 0 10px 10px 10px;
+    background-color:  #DADDE2;  
+    border: 3px solid #0F2862;
+    font-family: 'Roboto', sans-serif;
+}
+
+.alCenter {
+    /* background: #0F2862; */
+   width : 400px;
+}
+
+/* .inputBox{
+width : 98%;
+padding-left: 4px;
+height: 35px;
+font-size: 20px;
+border: 2px solid none;
+
+
+} */
+
+.matInp{
+    width:100%;
+    color :black;
+    font-size:30px;
+}
+
+.mat-input-underline {
+    background-color: black;   
+}
+
+h3 {
+    margin : 0;
+    padding : 0;
+    padding-bottom : 10px;
+
+}
+
+#frSub {
+    font-size: 20px;
+    margin-top : 20px;
+    width : 100%;
+    padding : 10px;
+    background-color: #DADDE2;
+    border : 3px solid #4f5f76;
+    border-radius: 5px;
+    transition : background-color .5s;
+}
+
+#frSub:hover {
+    background-color: #4f5f76;
+    color: white;
+}
+
+#nrgBtn {
+    color :black;
+    font-size: 20px;
+    margin-top: 20px;
+    width :100%;
+    padding:10px;
+    background-color: #DADDE2;
+    border :3px solid #4f5f76;
+    border-radius: 5px;
+    transition : background-color .5s;
+    transition : color .5s;
+
+}
+#nrgBtn:hover {
+    color : white;
+    background-color : #4f5f76;
+}
+.rLink {
+    text-decoration: none;
+    color : white;
+}
+
+#adUser {
+	font-size: 20px;
+    margin-top: 20px;
+    width :100%;
+    padding:10px;
+    background-color: #2F81FA  ;
+    border : none;
+}
+ .login-fields {
+     text-align: center;
+     display: inline-flex;
+     
+ }
+
+ .login-fields .form-control {
+     margin: 17px;
+ }
+

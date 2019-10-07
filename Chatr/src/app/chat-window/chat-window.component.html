@@ -1,0 +1,25 @@
+<app-search></app-search>
+<div class="post-box" id="post-box">
+  <div id="messageArea"></div>
+</div>
+      <div class="main-page container">
+        
+        <div class="channels-bar col-md-2">
+          <div class="p-info">
+              {{ username }}
+          </div>
+        </div>
+    
+        </div>
+
+  <form (ngSubmit)="sendMessage()">
+    <div class="input-group mb-3" id="chat-input">
+      <input type="text" class="form-control" name="messages" placeholder="Enter message here..." [(ngModel)]="payload.message" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="submit" id="button-addon2">Post</button>
+    </div>
+  </div>
+</form>
+
+
+
