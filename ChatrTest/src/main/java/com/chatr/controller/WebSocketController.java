@@ -30,6 +30,7 @@ public class WebSocketController {
     @MessageMapping("/chat.sendMessage")
     @SendTo("/topic/public")
     public Message sendMessage(@Payload Message chatMessage) {
+    	System.out.println("Content of sent message" + chatMessage);
         return chatMessage;
     }
 

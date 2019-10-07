@@ -42,7 +42,7 @@ export class WebSocketAPI {
   */
  send(message) {
     console.log("calling logout api via web socket");
-    this.stompClient.send("/app/hello", {}, JSON.stringify(message));
+    this.stompClient.send("/app/chat.sendMessage", {}, JSON.stringify(message));
 }
 
 onConnected(_this){

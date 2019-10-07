@@ -16,12 +16,8 @@
     border-radius: 5px;
 }
 
-.nav {
-    background-color: #0F2862;
-    height: 50px;
-    margin: 0px;
-    color: white;
-    /* border-radius: 5px; */
+p{
+    color: green!important;
 }
 
 .channels-bar {
