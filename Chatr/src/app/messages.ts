@@ -1,5 +1,6 @@
 export class Messages {
     cid: number;
     message: string;
-    ownerid: number;
+    sender: string;
+    type: string;
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,8 +33,10 @@ public class ChatrController {
 	}
 	
 	@PostMapping("/login")
-	public List<ChatrUser> login(@RequestBody ChatrUser user) {
+	public ChatrUser login(@RequestBody ChatrUser user) {
 		System.out.println("User in controller :: " + user.toString());
-		return service.login(user);
+		user = (ChatrUser) service.login(user);
+		return user;
 	}
+	
 }

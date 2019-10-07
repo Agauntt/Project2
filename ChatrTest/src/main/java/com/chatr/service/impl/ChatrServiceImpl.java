@@ -18,7 +18,7 @@ public class ChatrServiceImpl implements ChatrService{
 	
 	@Override
 	public ChatrUser registerUser(ChatrUser user) {
-		
+		System.out.println("registering user -- " + user.toString());
 		return userRepo.save(user);
 	}
 
@@ -29,9 +29,9 @@ public class ChatrServiceImpl implements ChatrService{
 	}
 
 	@Override
-	public List<ChatrUser> login(ChatrUser user) {
+	public ChatrUser login(ChatrUser user) {
 		System.out.println("User in serviceImpl :: " + user.toString());
-		return userRepo.UsernameIn(user.getChatruser());
+		return userRepo.findByChatruser(user.getChatruser());
 	}
 
 }

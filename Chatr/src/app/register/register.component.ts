@@ -20,7 +20,8 @@ export class RegisterComponent{
      console.log("registering user --" + this.user.passWord);
      this.chatrService.registerUser(this.user).subscribe(data => {
        if(data != null) {
-         this.goToChat()
+        localStorage.setItem('username', this.user.chatruser);
+        this.goToChat()
        }
      })
    }

@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { ChatWindowComponent } from './chat-window/chat-window.component';
 import { Routes, RouterModule } from '@angular/router';
+import { MessageComponent } from './message/message.component';
 
 
 const routes: Routes=[
@@ -25,7 +26,8 @@ const routes: Routes=[
     ChatWindowComponent,
     SearchComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
