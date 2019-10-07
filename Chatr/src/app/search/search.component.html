@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="topnav">
-    <div class="search-container">
+    <button class="btn logoutBtn" (click)="logout()">Logout</button>
+    <div class="search-container row">
         <form (ngSubmit)="search()"#searchForm="ngForm">
             <input type="text" name="username" placeholder="Search.." [(ngModel)]="username"/>
             <button type="submit"><i class="fa fa-search"></i></button>

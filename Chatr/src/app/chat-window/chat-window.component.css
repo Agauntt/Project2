@@ -11,13 +11,27 @@
 }
 
 #chat-input {
-    margin-left: 13vw;
+    margin-left: 14vw;
     width: 70vw;
     border-radius: 5px;
 }
 
-p{
-    color: green!important;
+:host::ng-deep .event-message {
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+:host::ng-deep .chat-message {
+    color: white;
+    background-color: gray;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+:host::ng-deep .chat-message span{
+    color: white;
+    font-weight: bold;
 }
 
 .channels-bar {
@@ -41,4 +55,8 @@ p{
 
 .main-page {
     display: inline;
+}
+
+.logoutBtn {
+    float: left;
 }
